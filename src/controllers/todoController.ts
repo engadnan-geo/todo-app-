@@ -1,12 +1,7 @@
 import { Response, Request, NextFunction } from "express";
 import Todo from "../models/todo";
 
-interface AuthUser {
-  _id: string;
-  role: "admin" | "user";
-  username?: string;
-  email?: string;
-}
+
 
 interface AuthRequest extends Request {
   user?: any;
